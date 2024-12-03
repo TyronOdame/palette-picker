@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Palette Picker</title>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Palette Picker</h1>
+      <p>bring your colors themes to life</p>
+    </div>
+    <div id="form">
+      <form action="">
+        <h2>Palette Creator</h2>
+        <label for="name">Palette Title:</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="colors">Color #1:</label>
+        <input type="color" name="colors" id="colors" />
+
+        <label for="colorsTwo">Color #2:</label>
+        <input type="color" name="colorsTwo" id="colorsTwo" />
+
+        <label for="colorsThree">Color #:</label>
+        <input type="color" name="colorsThree" id="colorsThree" /><br /><br />
+
+        <fieldset>
+          <legend>Color Temperature</legend>
+          <label for="cool">Cool</label>
+          <input type="radio" name="temperature" id="cool" value="Cool" />
+
+          <label for="neutral">Neutral</label>
+          <input type="radio" name="temperature" id="neutral" value="Neutral" />
+
+          <label for="warm">Warm</label>
+          <input type="radio" name="temperature" id="warm" value="Warm" />
+        </fieldset>
+        <br />
+        <button type="submit">Create Palette</button>
+      </form>
+      <h3>Palettes</h3>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
