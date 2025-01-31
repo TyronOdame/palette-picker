@@ -8,25 +8,28 @@
     <title>Palette Picker</title>
   </head>
   <body>
-    <div id="heading">
-      <h1>Palette Picker</h1>
-      <p>bring your colors themes to life</p>
+    <div id="starterHeading">
+      <header>
+        <h4>Palette Picker</h4>
+      </header>
     </div>
     <div id="form">
       <form action="">
         <h2>Palette Creator</h2>
-        <label for="name">Palette Title:</label>
-        <input type="text" name="name" id="name" />
+        <div id="search">
+          <label for="name">Palette Title:</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div id="colors">
+          <label for="colorsOne">Color #1</label>
+          <input type="color" name="colorsOne" id="colorsOne" />
 
-        <label for="colors">Color #1:</label>
-        <input type="color" name="colors" id="colors" />
+          <label for="colorsTwo">Color #2</label>
+          <input type="color" name="colorsTwo" id="colorsTwo" />
 
-        <label for="colorsTwo">Color #2:</label>
-        <input type="color" name="colorsTwo" id="colorsTwo" />
-
-        <label for="colorsThree">Color #:</label>
-        <input type="color" name="colorsThree" id="colorsThree" /><br /><br />
-
+          <label for="colorsThree">Color #3</label>
+          <input type="color" name="colorsThree" id="colorsThree" /><br /><br />
+        </div>
         <fieldset>
           <legend>Color Temperature</legend>
           <label for="cool">Cool</label>
@@ -39,10 +42,16 @@
           <input type="radio" name="temperature" id="warm" value="Warm" />
         </fieldset>
         <br />
-        <button type="submit">Create Palette</button>
+        <div id="submit">
+          <button type="submit" id="enter">Create Palette</button>
+        </div>
       </form>
-      <h3>Palettes</h3>
     </div>
+    <h3>Palettes</h3>
+    <div id="palette-container" class="palette-container">
+      <ul id="list"></ul>
+    </div>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

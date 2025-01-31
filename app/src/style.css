@@ -1,3 +1,124 @@
+:root {
+  --background: #001e3b;
+  --paletteBox: #c5001a;
+  --accentColors: #e8a6b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  background-color: #b0e0e6;
+  background-color: var(--background);
+}
+body {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+#enter {
+  display: flex;
+  justify-self: center;
+  background-color: var(--accentColors);
+  outline: none;
+  border: none;
+  padding: 1%;
+}
+
+#starterHeading {
+  display: flex;
+  width: 100%;
+  background-color: var(--paletteBox);
+  padding: 1%;
+  margin: 0;
+  justify-items: center;
+  margin-bottom: 3%;
+}
+#search {
+  display: flex;
+  gap: 1;
+}
+
+#colorButton {
+  display: flex;
+  flex-direction: column;
+}
+
+#form {
+  background-color: var(--paletteBox);
+  margin: 1%;
+  padding: 1%;
+  /* display: flex; */
+  justify-content: center;
+  /* flex-direction: column; */
+  max-width: fit-content;
+  border-radius: 4%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0);
+  width: 100%;
+  margin-bottom: 3%;
+  /* align-content: center; */
+}
+/* form {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center;
+  justify-content: center; */
+/* align-self: center; */
+/* } */
+*/ h4 {
+  color: var(--accentColors);
+  padding: 0;
+}
+
+.palettes {
+  /* background-color: darkgray; */
+  display: flex;
+  /* max-width: 200px;
+  max-height: 220px; */
+}
+
+.palette {
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+}
+
+#textExs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 2%;
+  width: 100%;
+}
+footer {
+  display: flex;
+  padding: 2%;
+  align-self: center;
+  width: 20rem;
+}
+
+#articleHeader {
+  display: flex;
+  align-self: center;
+}
+
+.palette-container {
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--paletteBox);
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 350px;
+  border-radius: 4%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0);
+  width: 100%;
+  margin-bottom: 3%;
 }
